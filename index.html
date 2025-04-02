@@ -1,22 +1,35 @@
 <!DOCTYPE html> 
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ola mundo</title>
+    <title>Olá mundo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 id="ola">  </h1>
+    <h1 id="ola">Olá!</h1>
 
-        <script>
+    <div class="saudacao" id="mensagem">
+        Olá visitante! Seja bem-vindo ao meu site!
+        <button onclick="Saudacao()">
+            Personalizar Saudação
+        </button>    
+    </div>
+        
+    <script>
+        // Atualiza o h1 quando o DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            let nome = "Lelo";
+            document.getElementById("ola").textContent = "Olá " + nome + "!";
+        });
 
-            document.getElementById("ola").textContent = "Olá mundo!";
-
-        </script>
-
+        function Saudacao() {
+            let texto = "Como vai você?"; 
+            document.getElementById("mensagem").innerHTML = 
+                texto + 
+                '<button onclick="Saudacao()">Personalizar Saudação</button>';
+        }
+    </script>
 </body>
-
 </html>
