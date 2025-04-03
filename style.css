@@ -34,5 +34,21 @@ h2{
     text-align: center;
     margin-top: 20px;
     text-align: center;
+}
 
+p{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #9B48B7;
+    border: none;
+    cursor: pointer;
 }
