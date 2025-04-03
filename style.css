@@ -1,25 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
  
-*{
+* {
     margin: 4px;
     padding: 5px;
     box-sizing: border-box;
- }
-
-head{
-    font-family: Arial, sans-serif;
-    text-align: center;
 }
+
+header {
+    padding: 2rem;
+    background-color: #9B48B7;
+    text-align: center;
+    border: #333 solid 2px;
+ }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #ab50c9;
+    font-size: 2rem;
 }
 
-p{
+h1{
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 5rem;
+    color: #333;
     text-align: center;
-    color: #000;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 1,45rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+
 }
