@@ -52,3 +52,17 @@ button{
     border: none;
     cursor: pointer;
 }
+
+input[type="text"]{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #9B48B7;
+    border: solid 2px #333;
+    cursor: pointer;
+    width: 20rem;
+}
+
+input::placeholder {
+    color: #000000;
+    opacity: 1;    
+}
