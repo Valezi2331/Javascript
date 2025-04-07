@@ -7,18 +7,19 @@ function guardarHobbie(){
 
     let inputHobbie = document.getElementById("hobbie")
     let hobbie = inputHobbie.value.trim()
+    let resposta = document.getElementById("respostaHobbie").textContent
 
     // ! se o valor do input for vazio, não adicionar o hobbie na lista e mostrar um alerta
 
 if (hobbie == "") {
     let mensagemErro = "Por favor, preencha o campo de hobbie!" 
-    document.getElementById("respostaHobbie").textContent = mensagemErro;
+    resposta = mensagemErro;
     alert(mensagemErro)
 }else{
         let respostaHobbie = "Hobbie adicionado a lista";
         let lista = document.getElementById("listaHobbies")
         let novoHobbie = document.createElement("li")
-        document.getElementById("respostaHobbie").textContent = respostaHobbie;
+        resposta = respostaHobbie;
 
         lista.appendChild(novoHobbie)
         novoHobbie.textContent = hobbie
