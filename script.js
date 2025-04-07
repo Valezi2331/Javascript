@@ -5,18 +5,24 @@ function Saudacao() { // função do botão de saudação
 
 function guardarHobbie(){
 
-    let respostaHobbie = "Hobbie adicionado a lista";
-
     let inputHobbie = document.getElementById("hobbie")
-    let hobbie = inputHobbie.value
-    document.getElementById("respostaHobbie").textContent = respostaHobbie;
+    let hobbie = inputHobbie.value.trim()
 
-    let lista = document.getElementById("listaHobbies")
-    let novoHobbie = document.createElement("li")
+    // ! se o valor do input for vazio, não adicionar o hobbie na lista e mostrar um alerta
 
-    lista.appendChild(novoHobbie)
+if (hobbie == "") {
+    let mensagemErro = "Por favor, preencha o campo de hobbie!" 
+    document.getElementById("respostaHobbie").textContent = mensagemErro;
+    alert(mensagemErro)
+}else{
+        let respostaHobbie = "Hobbie adicionado a lista";
+        let lista = document.getElementById("listaHobbies")
+        let novoHobbie = document.createElement("li")
+        document.getElementById("respostaHobbie").textContent = respostaHobbie;
 
-    novoHobbie.textContent = hobbie
+        lista.appendChild(novoHobbie)
+        novoHobbie.textContent = hobbie
+        inputHobbie.value = ""
+    }
 
-    inputHobbie.value = ""
 }
