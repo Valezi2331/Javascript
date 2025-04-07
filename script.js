@@ -4,9 +4,12 @@ function Saudacao() { // função do botão de saudação
 } 
 
 function guardarHobbie(){
+
+    let respostaHobbie = "Hobbie adicionado a lista";
+
     let inputHobbie = document.getElementById("hobbie")
     let hobbie = inputHobbie.value
-    document.getElementById("respostaHobbie").textContent = hobbie;
+    document.getElementById("respostaHobbie").textContent = respostaHobbie;
 
     let lista = document.getElementById("listaHobbies")
     let novoHobbie = document.createElement("li")
